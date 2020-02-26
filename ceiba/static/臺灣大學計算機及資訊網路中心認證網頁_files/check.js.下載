@@ -1,0 +1,41 @@
+function verify1() {
+   var f;
+   f = document.p1;
+
+   if ((f.user.value.length < 3) || (f.user.value.length > 16)) {
+      alert("帳號輸入長度有誤");
+      f.user.focus();
+      return(false);
+   }
+
+   if (f.user.value.toLowerCase().charAt(0) < 'a' ||
+       f.user.value.toLowerCase().charAt(0) > 'z') {
+      alert("帳號輸入格式有誤");
+      f.user.focus();
+      return(false);
+   }
+
+   if (f.user.value.indexOf("@") >= 0 ||
+       f.user.value.indexOf("'") >= 0 ||
+       f.user.value.indexOf(";") >= 0 ||
+       f.user.value.indexOf(",") >= 0 ||
+       f.user.value.indexOf("/") >= 0 ||
+       f.user.value.indexOf("!") >= 0 ) {
+      alert("帳號輸入格式有誤，包含特殊字元。");
+      f.user.focus();
+      return(false);
+   }
+
+   if ((f.pass.value.length < 5) || (f.pass.value.length > 24)) {
+      alert("密碼輸入長度有誤");
+      f.pass.focus();
+      return(false);
+   }
+
+   if (f.pass.value.indexOf("'") >= 0 ||
+       f.pass.value.indexOf("\\") >= 0 ) {
+      alert("密碼輸入格式有誤，包含特殊字元。");
+      f.pass.focus();
+      return(false);
+   }
+}

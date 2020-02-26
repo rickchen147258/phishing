@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["CJZ+y"]); }
+
+__d("FBBrowserPasswordEncryption",["regeneratorRuntime","EnvelopeEncryption","tweetnacl-util"],(function(a,b,c,d,e,f){"use strict";__p&&__p();a={encryptPassword:function(a,c,d,e){__p&&__p();var f,g,h,i,j;return b("regeneratorRuntime").async(function(k){__p&&__p();while(1)switch(k.prev=k.next){case 0:f="#PWD_BROWSER";g=5;h=b("tweetnacl-util").decodeUTF8(d);i=b("tweetnacl-util").decodeUTF8(e);k.next=6;return b("regeneratorRuntime").awrap(b("EnvelopeEncryption").encrypt(a,c,h,i));case 6:j=k.sent;return k.abrupt("return",[f,g,e,b("tweetnacl-util").encodeBase64(j)].join(":"));case 8:case"end":return k.stop()}},null,this)}};e.exports=a}),null);

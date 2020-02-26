@@ -1,0 +1,146 @@
+/* Screen layout: */
+
+body {
+margin: 0 auto;
+padding: 0;
+font: 76% Verdana,Arial,sans-serif,細明體;
+background: #e8f3f9 url(https://web4.cc.ntu.edu.tw/s/login/v1/images/webbg.jpg) top center repeat-y;
+}
+
+#wrap {
+background: #ffffff;
+color: #303030;
+margin: 0 auto;
+width: 1034px;
+}
+
+#header {
+clear: both;
+margin: 0px 0 0 0;
+padding: 0;
+height: 87px;
+background: #e8f3f9 url(https://web4.cc.ntu.edu.tw/s/login/v1/images/web2_01.gif) top center repeat-y;
+}
+
+
+#avmenu {
+clear: left;
+float: left;
+width: 305px;
+height:421px;
+margin: 0 auto;
+padding: 0;
+font-size: 0.9em;
+background: #e8f3f9 url(https://web4.cc.ntu.edu.tw/s/login/v1/images/web2_02.gif) bottom center no-repeat;}
+
+#avmenu ul {	
+list-style: none;
+width: 140px;
+margin-top: 10px;
+font-size: 1.1em;
+text-align: right;
+line-height: 2em;
+float:right;
+}	
+
+#avmenu li {
+margin: 0px;
+width: 140px;
+padding: 15px 0 0 0px;
+}
+
+#avmenu li a {
+font-weight: bold;
+text-decoration: none;
+color: #FFFFFF;
+display: block;
+border-bottom: 1px solid #FFFFFF;
+}	
+	
+#avmenu li a:hover {
+color: #CC0000;
+border-right: 5px solid #CC0000;
+}
+
+
+#extras {
+float: right;
+width: 280px;
+height:421px;
+margin: 0 auto;
+padding: 0;
+font-size: 0.9em;
+line-height: 1.5em;
+background: #e8f3f9 url(https://web4.cc.ntu.edu.tw/s/login/v1/images/web2_04.gif) top center no-repeat;}
+}
+
+#extras p {
+margin-top:60p;
+padding-top:60px;
+padding-right:10px;
+padding-left:10px;
+}
+
+#content {
+margin: 0 110px 0px 305px;
+padding: 0 20px 0 20px;
+height:421px;
+line-height: 1.6em;
+text-align: left;
+background: #d6cebb url(https://web4.cc.ntu.edu.tw/s/login/v1/images/web2_03.gif) top center repeat-y;
+}
+
+#content h2 {
+font-size: 1.5em;
+margin: 0 0 0.5em 0;
+}
+h3 {
+font-size: 1em;
+margin: 0 0 10px 0;
+padding-top:30px;
+}
+
+h4 {
+font-size: 1em;
+}
+
+a {
+text-decoration: none;
+color: #286ea0;
+}
+
+a:hover {
+text-decoration: underline;
+color: #286ea0;
+}
+
+a img {
+border: 0;
+}
+
+#footer {
+margin: 0 auto;
+border: 0;
+height: 102px;
+background: #e8f3f9 url(https://web4.cc.ntu.edu.tw/s/login/v1/images/web2_05.gif) top center repeat-y;
+}
+
+.product_popup_shipment {
+	BORDER-RIGHT: #ff6600 2px solid; PADDING-RIGHT: 10px; BORDER-TOP: #ff6600 2px solid; MARGIN-TOP: 50px; PADDING-LEFT: 10px; FONT-SIZE: 12px; PADDING-BOTTOM: 10px; MARGIN-LEFT: 100px; BORDER-LEFT: #ff6600 2px solid; WIDTH: 200px; PADDING-TOP: 10px; BORDER-BOTTOM: #ff6600 2px solid; HEIGHT: auto; BACKGROUND-COLOR: #ffffcc
+}
+.product_popup_shipment H3 {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 12px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 0px; COLOR: #006600; PADDING-TOP: 0px
+}
+.product_popup_shipment H3 IMG {
+	MARGIN-TOP: -7px
+}
+.product_popup_arrow {
+	MARGIN-TOP: -5px; MARGIN-LEFT: -24px
+}
+.product_popup_shipment_item {
+	CLEAR: left; FONT-SIZE: 10px; MARGIN-BOTTOM: 8px; COLOR: #660000
+}
+#product_shipment_table {
+	CLEAR: left; BORDER-RIGHT: #a3e557 1px solid; BORDER-TOP: #a3e557 1px solid; BORDER-LEFT: #a3e557 1px solid; BORDER-BOTTOM: #a3e557 1px solid
+#div1 {
+	PADDING-LEFT: 0px; PADDING-TOP: 0px;}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>NTU CEIBA - 國立臺灣大學 非同步課程管理系統</title>
+	
+	<link rel="shortcut icon" href="https://ceiba.ntu.edu.tw/favicon.ico" type="image/x-icon">	
+	<link rel="icon" href="https://ceiba.ntu.edu.tw/favicon.ico" type="image/ico">
+	<link rel="Bookmark" href="https://ceiba.ntu.edu.tw/favicon.ico">
+	<link rel="stylesheet" href="./NTU CEIBA - 國立臺灣大學 非同步課程管理系統_files/base.css" type="text/css">
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function chkFill() {
+    var form = document.login;
+    if (form.loginid.value == "" || form.loginid.value == null) {
+        alert("請輸入使用者帳號！");
+        form.loginid.focus();
+        return false;
+    }
+    else if (form.password.value == "" || form.password.value == null) {
+        alert("請輸入您的密碼！");
+        form.password.focus();
+        return false;
+    }
+    else {
+        form.submit();
+        return true;
+    }
+}
+function login_focus(){
+    //document.login.loginid.focus();
+}
+
+function ckU(obj,item,item2) {
+	document.getElementById(item).style.display = obj.checked?"block":"none"; 
+	document.getElementById(item2).style.display = obj.checked?"none":"block";  
+}
+//-->
+</script>
+<script language="JavaScript">
+<!--
+function OpenWindow()
+{
+window.status = "";
+strFeatures = "top=150,left=150,width=420,height=305,toolbar=0,menubar=0,location=0,directories=0,status=1,scrollbars=yes,resizeable=yes";
+objNewWindow = window.open("new_top.htm" , "MyNew", strFeatures);
+window.status = "緊急公告";
+window.event.cancelBubble = true;
+window.event.returnValue = false;
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+  }
+//-->
+</script>
+</head>
+
+<body onload="login_focus();">
+<div id="container">
+	<div id="banner"><script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+//-->
+</script>
+    <ul id="nav-top">
+    	<li><a href="https://ceiba.ntu.edu.tw/index.php">首頁</a></li>
+		<li> <a href="https://ceiba.ntu.edu.tw/?op=news">最新消息</a></li>
+        <li> <a href="http://www.dlc.ntu.edu.tw/ceiba-support/" target="_blank">使用支援</a></li>
+   	  	<li> <a href="https://nol.ntu.edu.tw/" target="_blank">課程搜尋(臺大課程網)</a></li>
+   	  	<li> <a href="https://ceiba.ntu.edu.tw/?op=about">關於CEIBA</a></li>
+	  	<li id="lg"> <a href="https://ceiba.ntu.edu.tw/index.php?op=login">登入</a></li>
+    </ul>
+    <div id="banner-body"></div>
+</div>	
+	<div id="langua">
+	    	語言 Language: 
+        <select name="lang" onchange="location.href=this.options[this.selectedIndex].value;" class="jmp">
+        <option selected="" value="index.php?lang=big5">中文(Chinese)</option>
+        <option value="index.php?lang=eng">英文(English)</option>
+        </select>
+        </div>
+    <div id="main">		
+	<div id="side">
+    <div id="login">
+        <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">
+        <h2>登入</h2>
+        <p><input type="radio" name="class" value="0" checked="" onclick="ckU(this,&#39;obj1&#39;,&#39;obj2&#39;);">本校教職員學生<br> 
+        <input type="radio" name="class" value="1" onclick="ckU(this,&#39;obj2&#39;,&#39;obj1&#39;);"> 
+        助教、校外師生、旁聽生、先修生、臺灣大學系統學生 (臺師大、臺科大)、國北教大學生</p>
+           
+        <div id="obj2" style="display:none">   
+        <form name="login" method="post" action="https://ceiba.ntu.edu.tw/index.php?error_check=OK">                	                		
+        <p>帳號：<input type="text" name="loginid" class="inp"><br>
+        密碼：<input type="password" name="password" class="inp"></p>
+        <input type="hidden" name="op" value="login">
+        <p><input type="submit" value="登入" class="btn">
+        <input type="reset" name="Submit2" value="清除" class="btn"></p>
+        </form>
+        </div>                	
+        
+        <div id="obj1">
+        <form name="login2" method="post" action="https://ceiba.ntu.edu.tw/ChkSessLib.php">
+        <p><input type="submit" value="登入" class="btn">
+        </p></form><p></p>
+        </div>        	
+ 	 <p class="info"><a href="https://ceiba.ntu.edu.tw/ApplyResetPassword/" target="_parent">重設密碼</a></p>   
+        <p class="info"><a href="https://ceiba.ntu.edu.tw/?op=password" target="_parent">登入說明</a></p>
+        <p class="info"><a href="http://www.dlc.ntu.edu.tw/ceiba-support/" target="_blank">常見問題 FAQ</a></p>
+        </div></div></div></div></div></div></div></div>
+    </div>
+    <div id="contact">
+        <h2>諮詢服務</h2>
+        <ul>
+        	<li>聯絡電話 : (02) 3366-3367 # 532 </li>
+        	<li>電子郵件 : <a href="mailto:ntuceiba@ntu.edu.tw">ntuceiba@ntu.edu.tw</a></li>
+            <li>時間：週一 ~ 週五 8:30am ~ 5:30pm</li>
+        	<li>地點：博雅教學大樓 5 樓</li>
+        </ul>
+    </div>
+</div>
+<div id="content">
+	<div id="news"><h1>最新消息</h1>
+<ul>
+	
+	<li>
+	<img src="./NTU CEIBA - 國立臺灣大學 非同步課程管理系統_files/im.gif"> <a href="https://ceiba.ntu.edu.tw/?op=news_popup&amp;sn=412808">請勿直接回覆CEIBA信件</a> 2019-12-10 
+		</li><li>
+	<img src="./NTU CEIBA - 國立臺灣大學 非同步課程管理系統_files/icon03.gif"><img src="./NTU CEIBA - 國立臺灣大學 非同步課程管理系統_files/im.gif"> <a href="https://ceiba.ntu.edu.tw/?op=news_popup&amp;sn=409614">CEIBA 資料已復原 (教務處正式成績不受影響)</a> 2019-11-08 
+		</li><li>
+	<img src="./NTU CEIBA - 國立臺灣大學 非同步課程管理系統_files/im.gif"> <a href="https://ceiba.ntu.edu.tw/?op=news_popup&amp;sn=403085">CEIBA 寄信資訊說明</a> 2019-09-20 
+		</li><li>
+	<img src="./NTU CEIBA - 國立臺灣大學 非同步課程管理系統_files/im.gif"> <a href="https://ceiba.ntu.edu.tw/?op=news_popup&amp;sn=401613">臺灣大學聯盟 (臺師大、臺科大) 選課學生登入 CEIBA 或未收到帳密說明</a> 2019-09-20 
+		</li><li>
+	<img src="./NTU CEIBA - 國立臺灣大學 非同步課程管理系統_files/im.gif"> <a href="https://ceiba.ntu.edu.tw/?op=news_popup&amp;sn=218063">非臺灣大學聯盟學生(如國北教大、政大等)，需由老師或助教手動加入系統</a> 2019-09-04 
+		</li>	
+</ul>
+<p class="more"><a href="https://ceiba.ntu.edu.tw/index.php?op=news">更多 »</a></p>
+
+
+<h1>NTU CEIBA App</h1>
+<div class="qrcode">
+<img src="./NTU CEIBA - 國立臺灣大學 非同步課程管理系統_files/qrcode-android.png">Android
+</div>
+<div class="qrcode">
+<img src="./NTU CEIBA - 國立臺灣大學 非同步課程管理系統_files/qrcode-ios.png">ios
+</div>
+
+</div>
+<!--    <div id="support"></div>-->
+</div>
+    </div>
+</div>
+<div id="footer"><a href="https://ceiba.ntu.edu.tw/?op=copyright">＠2003-2019</a> <a href="http://www.ntu.edu.tw/" target="_blank">國立臺灣大學</a> 版權所有<br>維護更新: <a href="http://dlc.ntu.edu.tw/" target="_blank">教務處數位學習中心 教學科技組</a> / 教務處 資訊組<br>聯絡我們: (02)3366-3367 # 532  / ntuceiba@ntu.edu.tw<br>尊重智慧財產權，請依授權規範使用檔案資料。</div>   
+
+<!--1 -->
+
+</body></html>
