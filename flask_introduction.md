@@ -9,9 +9,9 @@ Flask
 
 ## Set the flask app
 
-- ==Windows== system: type `set FLASK_APP={code.py}` in cmd
+- <b>Windows</b> system: type `set FLASK_APP={code.py}` in cmd
 
-- ==linux or mac== system: type `export FLASK_APP={code.py}` in terminal
+- <b>linux or mac</b> system: type `export FLASK_APP={code.py}` in terminal
 - For example:
     ![](https://i.imgur.com/S2QEykq.png)
 
